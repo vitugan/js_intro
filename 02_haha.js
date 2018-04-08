@@ -12,3 +12,5 @@ function pythagoreanTheorem(){
 	c = Math.sqrt(a*a + b*b);
 	return c;
 }
+
+function pythagoreanTheorem();

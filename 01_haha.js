@@ -6,3 +6,5 @@ function log10(){
 		console.log(i);
 	}
 }
+
+log10();
