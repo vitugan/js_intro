@@ -5,6 +5,6 @@ function setMeetup(){
     var date = prompt('Input a date: ');
     var name = prompt('Input a name: ');
     var city = prompt('Input a city: ');
-    debugger
+    
     alert(name +' has a meeting at '+ date +' somewhere in '+city );
 }
