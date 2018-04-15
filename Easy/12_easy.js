@@ -10,5 +10,7 @@ function arr_min_max(arr){
         return (current > prev) ? current : prev;
     });
 
-    return {'max': min, 'min':max};
+    return {'max': max, 'min':min};
 }
+
+console.log(arr_min_max([1,92,-5,25]));

@@ -6,4 +6,4 @@ function str_reverse(str){
 	return str.split("").reverse().join("");
 }
 
-str_reverse("hello world");
+console.log(str_reverse("hello world"));

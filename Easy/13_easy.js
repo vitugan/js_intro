@@ -10,4 +10,4 @@
     return average;
  }
 
- average_num([1,4,2]);
+ console.log(average_num([1,4,2]));
