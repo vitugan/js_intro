@@ -9,7 +9,6 @@ function biynarySearch(n, range){
         end = range.to;    
     
     while(start<=end){
-        debugger
         var middle = Math.ceil((end+start) / 2);
         console.log(middle);
         if(n === middle){            

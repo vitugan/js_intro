@@ -10,20 +10,23 @@
     if(user_obj === null){
         return true;
     } else {
-        obj_props = Object.keys(user_obj);  //Convert object props to array
-        for(var i=0; i < props.length; i++ ){
-            if(!obj_props.includes(props[i])){
+        for(var i=0; i<props.length; i++){
+            if(user_obj[props[i]] === undefined) {
                 throw '"'+props[i]+'"'+" wasn't passed on object";
             }
-        }    
+        }
         return true;
     }  
  }
  
+try{
+    validate(["name","surname", "age"], {name:"Roman",surname:"Rodomansky"});
+    validate(["name","surname"], {name:"Roman",surname:"Rodomansky"});
+    validate(["name","surname", "age"]);
+} 
+catch (e) {
+    console.log(e);
+}
 
-var is_valid = validate(["name","surname", "age"], {name:"Roman",surname:"Rodomansky"});
-//var is_valid = validate(["name","surname"], {name:"Roman",surname:"Rodomansky"});
-//var is_valid = validate(["name","surname", "age"]);
-console.log(is_valid);
- 
- 
+
+//console.log(is_valid);

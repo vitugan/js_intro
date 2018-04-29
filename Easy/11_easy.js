@@ -3,11 +3,7 @@
  */
 
 function pair_numbers(arr){
-    var output =[];
-    for(var i=0; i < arr.length; i++){
-        if(arr[i]%2 == 0){
-            output.push(arr[i]);
-        }
-    }
-    return output;
+    return arr.filter(function(value){        
+    	return (value%2) == 0;             	
+    });
 }

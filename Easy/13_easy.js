@@ -5,8 +5,8 @@
  function average_num(arr){
     var sum = arr.reduce(function(prev, current){
         return prev + current;
-    });
-    var average = Math.round((sum / arr.length) * 100) / 100;
+    });    
+    var average = (sum / arr.length).toFixed(2);
     return average;
  }
 
